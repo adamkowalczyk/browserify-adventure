@@ -15,3 +15,21 @@ Widget.prototype.setName = function (name) {
 Widget.prototype.appendTo = function (target) {
   target.appendChild(this.element);
 };
+
+// This workshop doesn't explain much about browerify...
+
+// DOCS:
+// You can just as easily create a bundle that will export a require() function so you can require() modules from another script tag. Here we'll create a bundle.js with the through and duplexer modules.
+
+// $ browserify -r through -r duplexer -r ./my-file.js:my-module > bundle.js
+// Then in your page you can do:
+
+// <script src="bundle.js"></script>
+// <script>
+//   var through = require('through');
+//   var duplexer = require('duplexer');
+//   var myModule = require('my-module');
+//   /* ... */
+// </script>
+
+// so, here the -r flag and the ./my-file:my-module syntax exposes our module in the bundle output
