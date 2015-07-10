@@ -16,7 +16,7 @@ Widget.prototype.appendTo = function (target) {
   target.appendChild(this.element);
 };
 
-// This workshop doesn't explain much about browerify...
+// This workshop doesn't explain much about browesrify...
 
 // DOCS:
 // You can just as easily create a bundle that will export a require() function so you can require() modules from another script tag. Here we'll create a bundle.js with the through and duplexer modules.
